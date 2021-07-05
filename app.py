@@ -27,5 +27,5 @@ def emoji(img, emoji, emoji_size, opacity, x_coordinate, y_coordinate):
 
 iface = gr.Interface(emoji, 
         inputs=[gr.inputs.Image(shape=(200, 200)), gr.inputs.Dropdown(emoji_list, default="Heart Eyes"), gr.inputs.Slider(0.1, 1), gr.inputs.Slider(0.1, 1), gr.inputs.Slider(0.1, 1), gr.inputs.Slider(0.1, 1)], 
-        outputs=["image"])
+        outputs=["image"], server_name="0.0.0.0")
 iface.launch()
