@@ -12,16 +12,16 @@ def emoji(img, emoji, emoji_size, opacity, x_coordinate, y_coordinate):
         np_aug_img = aug_np_wrapper(asarray(img), overlay_emoji, **{'emoji_size': emoji_size, 'opacity': opacity, 'y_pos': y_coordinate, 'x_pos': x_coordinate})
 
     elif emoji == "Grinning with sweat":
-        np_aug_img = aug_np_wrapper(asarray(img), overlay_emoji, **{'emoji_path': os.path.join(PATH, 'grinning_face_with_sweat.png'), 'emoji_size': emoji_size, 'opacity': opacity, 'y_pos': y_coordinate, 'x_pos': x_coordinate})
+        np_aug_img = aug_np_wrapper(asarray(img), overlay_emoji, **{'emoji_path': os.path.join(PATH+'/emojis', 'grinning_face_with_sweat.png'), 'emoji_size': emoji_size, 'opacity': opacity, 'y_pos': y_coordinate, 'x_pos': x_coordinate})
 
     elif emoji == "Tears of Joy":
-        np_aug_img = aug_np_wrapper(asarray(img), overlay_emoji, **{'emoji_path': os.path.join(PATH, 'face_with_tears_of_joy.png'), 'emoji_size': emoji_size, 'opacity': opacity, 'y_pos': y_coordinate, 'x_pos': x_coordinate})
+        np_aug_img = aug_np_wrapper(asarray(img), overlay_emoji, **{'emoji_path': os.path.join(PATH+'/emojis', 'face_with_tears_of_joy.png'), 'emoji_size': emoji_size, 'opacity': opacity, 'y_pos': y_coordinate, 'x_pos': x_coordinate})
 
     elif emoji == "Scream":
-        np_aug_img = aug_np_wrapper(asarray(img), overlay_emoji, **{'emoji_path': os.path.join(PATH, 'face_screaming_in_fear.png'), 'emoji_size': emoji_size, 'opacity': opacity, 'y_pos': y_coordinate, 'x_pos': x_coordinate})
+        np_aug_img = aug_np_wrapper(asarray(img), overlay_emoji, **{'emoji_path': os.path.join(PATH+'/emojis', 'face_screaming_in_fear.png'), 'emoji_size': emoji_size, 'opacity': opacity, 'y_pos': y_coordinate, 'x_pos': x_coordinate})
 
     else:
-        np_aug_img = aug_np_wrapper(asarray(img), overlay_emoji, **{'emoji_path': os.path.join(PATH, 'disappointed_face.png'), 'emoji_size': emoji_size, 'opacity': opacity, 'y_pos': y_coordinate, 'x_pos': x_coordinate})
+        np_aug_img = aug_np_wrapper(asarray(img), overlay_emoji, **{'emoji_path': os.path.join(PATH+'/emojis', 'disappointed_face.png'), 'emoji_size': emoji_size, 'opacity': opacity, 'y_pos': y_coordinate, 'x_pos': x_coordinate})
 
     return np_aug_img
 
