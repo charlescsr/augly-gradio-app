@@ -2,7 +2,7 @@ import os
 import gradio as gr
 from numpy import asarray
 from augly.image import aug_np_wrapper, overlay_emoji
-PATH = os.getenv('MAIN_PATH_TMP')
+PATH = os.getcwd()
 
 emoji_list = ["Heart Eyes", "Grinning with sweat", "Tears of Joy", "Scream", "Disappointed"]
 
